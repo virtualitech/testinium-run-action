@@ -1,0 +1,24 @@
+name: 'Testinium Action'
+description: 'Run given plan according to given api url'
+inputs:
+  api-url:
+    description: 'api url of your project'
+    required: true
+  username:
+    description: 'testinium username or email'
+    required: true
+  password:
+    description: 'testinium password'
+    required: true
+  plan-name:
+    description: 'testinium plan name'
+    required: true
+  token:
+    description: 'testinium basic token'
+    required: true
+outputs:
+  result:
+    description: 'Result of execution'
+runs:
+  using: 'node12'
+  main: 'index.js'
